@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSHARP Chapter 3 Exercise 3.31", "CSHARP Chapter 3 Exercise 3.31\CSHARP Chapter 3 Exercise 3.31.csproj", "{639C31BF-2990-43E7-A479-1B2CC06F92C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{639C31BF-2990-43E7-A479-1B2CC06F92C2}.Debug|x86.ActiveCfg = Debug|x86
+		{639C31BF-2990-43E7-A479-1B2CC06F92C2}.Debug|x86.Build.0 = Debug|x86
+		{639C31BF-2990-43E7-A479-1B2CC06F92C2}.Release|x86.ActiveCfg = Release|x86
+		{639C31BF-2990-43E7-A479-1B2CC06F92C2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

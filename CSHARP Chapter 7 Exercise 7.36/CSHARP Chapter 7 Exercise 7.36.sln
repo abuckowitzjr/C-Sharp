@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSHARP Chapter 7 Exercise 7.36", "CSHARP Chapter 7 Exercise 7.36\CSHARP Chapter 7 Exercise 7.36.csproj", "{EAF495D9-E8D3-4A1A-8D40-BC4DD3A3EB35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAF495D9-E8D3-4A1A-8D40-BC4DD3A3EB35}.Debug|x86.ActiveCfg = Debug|x86
+		{EAF495D9-E8D3-4A1A-8D40-BC4DD3A3EB35}.Debug|x86.Build.0 = Debug|x86
+		{EAF495D9-E8D3-4A1A-8D40-BC4DD3A3EB35}.Release|x86.ActiveCfg = Release|x86
+		{EAF495D9-E8D3-4A1A-8D40-BC4DD3A3EB35}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

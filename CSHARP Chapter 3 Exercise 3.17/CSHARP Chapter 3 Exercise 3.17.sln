@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSHARP Chapter 3 Exercise 3.17", "CSHARP Chapter 3 Exercise 3.17\CSHARP Chapter 3 Exercise 3.17.csproj", "{76F5AD3D-13C9-4D55-AD77-3072088EB116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76F5AD3D-13C9-4D55-AD77-3072088EB116}.Debug|x86.ActiveCfg = Debug|x86
+		{76F5AD3D-13C9-4D55-AD77-3072088EB116}.Debug|x86.Build.0 = Debug|x86
+		{76F5AD3D-13C9-4D55-AD77-3072088EB116}.Release|x86.ActiveCfg = Release|x86
+		{76F5AD3D-13C9-4D55-AD77-3072088EB116}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

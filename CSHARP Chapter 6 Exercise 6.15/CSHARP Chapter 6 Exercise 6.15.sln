@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSHARP Chapter 6 Exercise 6.15", "CSHARP Chapter 6 Exercise 6.15\CSHARP Chapter 6 Exercise 6.15.csproj", "{96BC5170-6CC7-48D9-B9CD-17353C186488}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96BC5170-6CC7-48D9-B9CD-17353C186488}.Debug|x86.ActiveCfg = Debug|x86
+		{96BC5170-6CC7-48D9-B9CD-17353C186488}.Debug|x86.Build.0 = Debug|x86
+		{96BC5170-6CC7-48D9-B9CD-17353C186488}.Release|x86.ActiveCfg = Release|x86
+		{96BC5170-6CC7-48D9-B9CD-17353C186488}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
