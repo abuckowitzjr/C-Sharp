@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F3E2113-BC1C-45AA-9F6A-A09B0475063A}</ProjectGuid>
+    <ProjectGuid>{57F4A77C-F4C8-4C9B-BABF-052251E3C371}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ASimpleProgram</RootNamespace>
-    <AssemblyName>ASimpleProgram</AssemblyName>
+    <RootNamespace>_2._6_ASimpleProgram</RootNamespace>
+    <AssemblyName>2.6-ASimpleProgram</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

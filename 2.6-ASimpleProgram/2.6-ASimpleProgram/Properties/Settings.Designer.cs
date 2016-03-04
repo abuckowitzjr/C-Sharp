@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASimpleProgram.Properties
+namespace _2._6_ASimpleProgram.Properties
 {
 
 

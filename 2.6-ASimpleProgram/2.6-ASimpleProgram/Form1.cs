@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ASimpleProgram
+namespace _2._6_ASimpleProgram
 {
     public partial class Form1 : Form
     {
