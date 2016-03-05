@@ -8,7 +8,6 @@ public class HugeInteger
 
     public BigInteger Input(string number)
     {
-        var chars = number.ToCharArray();
         BigInteger bi = BigInteger.Parse(number);
         return bi;
     }
