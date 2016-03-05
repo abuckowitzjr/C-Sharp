@@ -1,96 +1,91 @@
 ﻿using System;
+using System.Numerics;
 
 public class HugeInteger
 {
-    Random rnd = new Random();
-    int[,] Digits = new int[1,40];
-    public string output;
 
-    public HugeInteger(int numberamount)
+    bool isEqualTo = true;
+
+    public BigInteger Input(string number)
     {
-        for (int counter = 1; counter <= numberamount; counter++)
-            for (int digit = 1; digit <= 40; digit++)
-                Digits[counter - 1, digit - 1] = rnd.Next(0, 10);
+        var chars = number.ToCharArray();
+        BigInteger bi = BigInteger.Parse(number);
+        return bi;
     }
-    private string Input()
+    public string ToString(BigInteger value)
     {
-        string result = "";
+        string output = value.ToString();
+        return output;
+    }
+    public string Add(BigInteger number1, BigInteger number2)
+    {
+        BigInteger sum = number1 + number2;
+        return ToString(sum);
+    }
+    public string Subtract(BigInteger number1, BigInteger number2)
+    {
+        BigInteger diff = 0;
+        if (number1 > number2)
+            diff = number1 - number2;
+        else
+            diff = number2 - number1;
+        return ToString(diff);
+    }
+    public bool IsEqualTo()
+    {
+        bool result = false;
 
         return result;
     }
-    private string ToString()
+    public bool IsNotEqualTo()
     {
-        string result = "";
+        bool result = false;
 
         return result;
     }
-    private int Add()
+    public bool IsGreaterThan()
+    {
+        bool result = false;
+
+        return result;
+    }
+    public bool IsLessThan()
+    {
+        bool result = false;
+
+        return result;
+    }
+    public bool IsGreaterThanOrEqualTo()
+    {
+        bool result = false;
+
+        return result;
+    }
+    public bool IsLessThanOrEqualTo()
+    {
+        bool result = false;
+
+        return result;
+    }
+    public bool IsZero()
+    {
+        bool result = false;
+
+        return result;
+    }
+    public int Multiply()
     {
         int result = 0;
 
         return result;
     }
-    private int Subtract()
+    public int Divide()
     {
         int result = 0;
 
         return result;
     }
-    private bool IsEqualTo()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsNotEqualTo()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsGreaterThan()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsLessThan()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsGreaterThanOrEqualTo()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsLessThanOrEqualTo()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private bool IsZero()
-    {
-        bool result = false;
-
-        return result;
-    }
-    private int Multiply()
-    {
-        int result = 0;
-
-        return result;
-    }
-    private int Divide()
-    {
-        int result = 0;
-
-        return result;
-    }
-    private int Remainder()
+    public int Remainder()
     {
         int result = 0;
 
