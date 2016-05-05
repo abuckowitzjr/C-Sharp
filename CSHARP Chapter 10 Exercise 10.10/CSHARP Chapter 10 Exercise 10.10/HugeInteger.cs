@@ -1,100 +1,125 @@
 ﻿using System;
+using System.Numerics;
+using System.Text;
 
 public class HugeInteger
 {
-    Random rnd = new Random();
-    int[,] Digits = new int[1,40];
-    public string output;
+    BigInteger num1 = 0; //For storing BigInteger values for use in the methods
+    BigInteger num2 = 0;
 
-    public HugeInteger(int numberamount)
+    public void Input(string input1, string input2)
     {
-        for (int counter = 1; counter <= numberamount; counter++)
-            for (int digit = 1; digit <= 40; digit++)
-                Digits[counter - 1, digit - 1] = rnd.Next(0, 10);
+        var chars1 = input1.ToCharArray(); //This could have been done without adding the strings to Char Array, but the book insisted I do so in this method so... yeah...
+        var chars2 = input2.ToCharArray(); //
+        string n1 = new String(chars1); //Creates new strings based on chars in arrays
+        string n2 = new String(chars2); //
+        num1 = BigInteger.Parse(n1); //Parses BigInteger numbers from new strings and stores in class variables
+        num2 = BigInteger.Parse(n2); //
     }
-    private string Input()
-    {
-        string result = "";
 
-        return result;
-    }
-    private string ToString()
+    public void Clear() //Clears values in Biginteger variables when called from Main
     {
-        string result = "";
-
-        return result;
+        num1 = 0;
+        num2 = 0;
     }
-    private int Add()
+
+    public string ToString(BigInteger value) //Converts any BigInteger value passed to it to string for use in Main for Console.Write
     {
-        int result = 0;
-
-        return result;
+        string output = value.ToString();
+        return output;
     }
-    private int Subtract()
+
+    public string ToString(Decimal value) //Converts any Decimal value passed to it to string for use in Main for Console.Write
     {
-        int result = 0;
-
-        return result;
+        string output = value.ToString();
+        return output;
     }
-    private bool IsEqualTo()
+
+    public BigInteger Add() //Adds numbers
+    {
+        BigInteger sum = num1 + num2;
+        return sum;
+    }
+    public BigInteger Subtract() //Subtracts numbers
+    {
+        BigInteger diff = num1 - num2;
+        return diff;
+    }
+    public bool IsEqualTo() //**Comparisons of numbers returning true or false
     {
         bool result = false;
-
+        if (num1 == num2)
+            result = true;
         return result;
     }
-    private bool IsNotEqualTo()
+    public bool IsNotEqualTo() //**
     {
         bool result = false;
-
+        if (num1 != num2)
+            result = true;
         return result;
     }
-    private bool IsGreaterThan()
+    public bool IsGreaterThan() //**
     {
         bool result = false;
-
+        if (num1 > num2)
+            result = true;
         return result;
     }
-    private bool IsLessThan()
+    public bool IsLessThan() //**
     {
         bool result = false;
-
+        if (num1 < num2)
+            result = true;
         return result;
     }
-    private bool IsGreaterThanOrEqualTo()
+    public bool IsGreaterThanOrEqualTo() //**
     {
         bool result = false;
-
+        if (num1 >= num2)
+            result = true;
         return result;
     }
-    private bool IsLessThanOrEqualTo()
+    public bool IsLessThanOrEqualTo() //** 
     {
         bool result = false;
-
+        if (num1 <= num2)
+            result = true;
         return result;
     }
-    private bool IsZero()
+    public bool IsZero(string choice) //Checks if numbers passed in are zero
     {
         bool result = false;
-
+        if (choice == "1")
+        {
+            if (num1 == 0)
+                result = true;
+        }
+        if (choice == "2")
+        {
+            if (num2 == 0)
+                result = true;
+        }
         return result;
     }
-    private int Multiply()
+    public BigInteger Multiply() //Returns product of numbers
     {
-        int result = 0;
-
-        return result;
+        BigInteger product = num1 * num2;
+        return product;
     }
-    private int Divide()
+    public Decimal Divide() //Returns quotient of numbers
     {
-        int result = 0;
-
-        return result;
+        Decimal decnum1 = Convert.ToDecimal(ToString(num1));
+        Decimal decnum2 = Convert.ToDecimal(ToString(num2));
+        Decimal quotient = Math.Round(decnum1 / decnum2, 3);
+        return quotient;
     }
-    private int Remainder()
+    public Decimal Remainder() //Returns remainder of numbers
     {
-        int result = 0;
-
-        return result;
+        String strnum1 = ToString(num1);
+        String strnum2 = ToString(num2);
+        Decimal remainder = Math.Round(Convert.ToDecimal(strnum1) % Convert.ToDecimal(strnum2), 3);
+        return remainder;
     }
 
 
