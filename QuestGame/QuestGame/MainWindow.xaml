@@ -1,8 +1,46 @@
 ﻿<Window x:Class="QuestGame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Quest" Height="768" Width="1024"
+        WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize" x:Name="QuestMain">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4" Grid.Column="0">
+                <ScrollViewer>
+                    <TextBox></TextBox>
+                </ScrollViewer>
+            </Border>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4" Grid.Column="1">
+                <ScrollViewer>
+                    <TextBox></TextBox>
+                </ScrollViewer>
+            </Border>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4" Grid.Column="2">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button Style="{StaticResource RoundedButtonStyle}" x:Name="chrBtn" Width="125" Height="35" Grid.Row="0">Character (C)</Button>
+                    <Button Style="{StaticResource RoundedButtonStyle}" x:Name="invBtn" Width="125" Height="35" Grid.Row="1">Inventory (I)</Button>
+                    <Button Style="{StaticResource RoundedButtonStyle}" x:Name="sklBtn" Width="125" Height="35" Grid.Row="2">Skills (K)</Button>
+                    <Button Style="{StaticResource RoundedButtonStyle}" x:Name="menuBtn" Width="125" Height="35" Grid.Row="3">Menu (Esc)</Button>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
