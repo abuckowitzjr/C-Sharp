@@ -1,0 +1,63 @@
+﻿<Window x:Class="QuestCSharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuestCSharp"
+        mc:Ignorable="d"
+        Title="Quest" Height="768" Width="1024"
+        WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize" x:Name="QuestMain">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.RowSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="150" />
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4"  Grid.Column="0">
+                <ScrollViewer x:Name="chatScrollViewer">
+                    <TextBox x:Name="chatInfoTB" Margin="5,5,5,5" FontSize="50" TextWrapping="Wrap" BorderThickness="0" TextChanged="TBTextChanged"></TextBox>
+                </ScrollViewer>
+            </Border>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4"  Grid.Column="1">
+                <ScrollViewer x:Name="gameScrollViewer">
+                    <TextBox x:Name="gameInfoTB" Margin="5,5,5,5" FontSize="50" TextWrapping="Wrap" BorderThickness="0" TextChanged="TBTextChanged"></TextBox>
+                </ScrollViewer>
+            </Border>
+            <Border BorderBrush="DarkGray" BorderThickness="1.75" Grid.Row="4" Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- Buttons for navigating and closing main window -->
+                    <Button x:Name="chrBtn" Width="125" Height="30" Click="BtnClick" Grid.Row="0">Character (C)</Button>
+                    <Button x:Name="invBtn" Width="125" Height="30" Click="BtnClick" Grid.Row="1">Inventory (I)</Button>
+                    <Button x:Name="sklBtn" Width="125" Height="30" Click="BtnClick" Grid.Row="2">Skills (K)</Button>
+                    <Button x:Name="menuBtn" Width="125" Height="30" Click="BtnClick" Grid.Row="3">Menu (Esc)</Button>
+                </Grid>
+            </Border>
+        </Grid>
+        
+        
+        <Canvas>
+            
+        </Canvas>
+    </Grid>
+</Window>
